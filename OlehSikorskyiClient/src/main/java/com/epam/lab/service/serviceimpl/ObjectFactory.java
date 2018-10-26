@@ -1,5 +1,9 @@
+package com.epam.lab.service.serviceimpl;
 
-package com.epam.lab.service;
+import com.epam.lab.service.modelweb.Summary;
+import com.epam.lab.service.modelweb.SummaryFault;
+import com.epam.lab.service.modelweb.SummarySuccess;
+import com.epam.lab.service.modelweb.SummaryWrapper;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;

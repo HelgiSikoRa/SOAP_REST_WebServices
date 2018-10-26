@@ -1,5 +1,5 @@
 
-package com.epam.lab.service.serviceimpl;
+package com.epam.lab.service.model;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -7,8 +7,8 @@ import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.xml.bind.annotation.XmlSeeAlso;
-import com.epam.lab.service.ObjectFactory;
-import com.epam.lab.service.SummaryWrapper;
+import com.epam.lab.service.serviceimpl.ObjectFactory;
+import com.epam.lab.service.modelweb.SummaryWrapper;
 
 
 /**
@@ -28,7 +28,7 @@ public interface WalletService {
     /**
      * 
      * @return
-     *     returns com.epam.lab.service.SummaryWrapper
+     *     returns com.epam.lab.service.modelweb.SummaryWrapper
      */
     @WebMethod(action = "checkBalance")
     @WebResult(partName = "return")
@@ -38,7 +38,7 @@ public interface WalletService {
      * 
      * @param money
      * @return
-     *     returns com.epam.lab.service.SummaryWrapper
+     *     returns com.epam.lab.service.modelweb.SummaryWrapper
      */
     @WebMethod(action = "withdrawMoney")
     @WebResult(partName = "return")
@@ -50,7 +50,7 @@ public interface WalletService {
      * 
      * @param money
      * @return
-     *     returns com.epam.lab.service.SummaryWrapper
+     *     returns com.epam.lab.service.modelweb.SummaryWrapper
      */
     @WebMethod(action = "refillAccount")
     @WebResult(partName = "return")

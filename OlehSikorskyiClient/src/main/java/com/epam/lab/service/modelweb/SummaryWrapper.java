@@ -1,5 +1,4 @@
-
-package com.epam.lab.service;
+package com.epam.lab.service.modelweb;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
